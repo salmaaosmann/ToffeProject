@@ -1,19 +1,14 @@
-/*CustomerManager holds all the customer related data
- * and manages sign up sign out and login of each customer
- * Attributes:
- * 			customerNameToAddressLog - is a hashmap with its key as the username and its value is the address
- * 			customerNameToPasswordLog - is a hashmap with its key as the username and its value is the user password
- * 			customerNameToEmail - is a hashmap with its key as the username and its value is the user email
- * 			customerNameToCartLog - is a hashmap with its key as the username and its value is a unique object of type cart
- * 			customerNameToPasswordLog - is a hashmap with its key as the username and its value is a arraylist that holds objects of type orders
- * 			userName - holds the name of the customer and is set when signIn function is called and set to null when signOut is called
- * 			loggedIn - to indicate if a customer is logged in 
- * Functions:
- * 		   - signUp - asks the user for the data required to sign him up and assigns the data to the corresponding data structures if the username entered 
- * 		     dont already exist
- * 		   - signIn - signs the user in if the userName exist in the logs and the entered password is correct, if so it assigns the username to the
- * 			 userName attribute and changes the boolean logged in to true to indicate that a user is logged in.
- * 		   - sigOut - sets the userName to null and loggedIn to false.
+/*Main class serves as the entry point for the system
+ * Atributes:
+ * 			exit - when true it terminates the program
+ * 			catalog - static because it dont need to be altered
+ * 			customerManager - static because the system needs one instance to manage all the customers
+ * 			adminManager - static because the system needs one instance to manage all the admins
+ * Functions:						
+ *			initializeSystem - initializes classes (catalog, customerManager, adminManager) and creates a few dummy data such as items and categories
+ *			handleLogin - handles the login process for both the admins and the customers
+ *			handleAdminMenu - views the admin menu and functionalities if a admin is logged in
+ *			handleCustomerMenu - views the customer menu and functionalities if a customer is logged in
  */
 package toffe;
 
