@@ -1,3 +1,17 @@
+/*AdminManager serves as a manager for all the admin accounts and holds the data structures related to the admin
+ * 				the default admin credentials is (admin,admin)
+ *Attributes:
+ *			loggedIn - to indicate if an admin is logged in
+ * 			adminLog - hashmap its key is the admin name and value is the admin password
+ *Functions:
+ *			AdminManager - the constructor puts the default admin credentials (admin,admin)
+ *			signUp - adds the new account credentials to the hashMap
+ *			signIn - checks if the given credentials exist in the hashMap and if so it changes the loggedIn boolean to true
+ *			addItemToCategory - takes a category and an item and adds the item to the category
+ * 			addNewItem - creates a new item and adds it to the chosen category
+ * 			addNewCategory - adds a new category to the system
+ * 			signOut - changes the boolean loggenIn to false
+ */
 package toffe;
 
 import java.util.HashMap;
