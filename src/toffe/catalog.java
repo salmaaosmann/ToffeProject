@@ -1,3 +1,12 @@
+/*Catalog serves as a list for the categories 
+ *Attributes:
+ *			categoryList - is a list of categories
+ *Functions:			
+ *			viewAllCategories - views all the categories stored in the list
+ *			viewAllItems - views all the items stored in each and every Category
+ *			getItem - for searching for an Item by its name
+ *			removeItemById - for removing an Item by its Id and the overloaded version gets an item by its Id
+ */
 package toffe;
 
 import java.util.ArrayList;
